@@ -1,5 +1,5 @@
 def run_guessing_game
-  random_num = rand(5) + 1
+  random_num = (rand(5) + 1)
   puts random_num
   guess = gets.chomp
   if guess === "exit"
