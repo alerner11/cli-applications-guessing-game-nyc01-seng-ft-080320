@@ -1,12 +1,14 @@
 def run_guessing_game
-  random_num = (rand(5) + 1)
+  random_num = rand(5) + 1
   puts random_num
   guess = gets.chomp
   if guess === "exit"
     puts "Goodbye!"
-  elsif guess === random_num
+  end
+  if guess === random_num
     puts "You guessed the correct number!"
-  else
+  end
+  if guess != "exit" && guess != random_num
     puts "Sorry! The computer guessed #{random_num}."
   end
 end
