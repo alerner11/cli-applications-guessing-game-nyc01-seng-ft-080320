@@ -1,8 +1,7 @@
 def run_guessing_game
   random_num = rand(5) + 1
-  puts random_num
   guess = gets.chomp
-  puts guess
+  case guess
   if guess === "exit"
     puts "Goodbye!"
   end
