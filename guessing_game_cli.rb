@@ -1,6 +1,5 @@
 def run_guessing_game
   random_num = rand(1..6)
-  puts "Guess a number!"
   guess = gets.chomp
   if guess === "exit"
     puts "Goodbye!"
